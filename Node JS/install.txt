@@ -1,0 +1,24 @@
+>npm install express-generator -g
+
+>express <new directory name>
+
+goto directory then
+>npm install
+
+>npm install nodemon -g --save
+
+install visual studio for bcrypt.
+>npm config set msvs_version 2015 --global
+>npm install bcryptjs --save
+
+
+
+
+
+
+##########################################################
+
+http://stackoverflow.com/questions/34335043/troubles-with-npm-and-node-gyp-in-windows
+##############################################################
+
+npm install --global --production windows-build-tools
