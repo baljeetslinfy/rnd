@@ -1,0 +1,20 @@
+var mysql = require("mysql");
+var db  = {
+  host            : 'localhost',
+  user            : 'root',
+  password        : 'sunny007',
+  database        : 'mede'
+}
+/*###############################################*/
+/* MYSQL DATABASE CONNECTION USING POOL #########*/
+/* TO GET RID OF SENDING CONTINOUS REQUESTS #####*/
+/* TO DB AND TO DESTROY CONNECTIONS AGAIN N AGAIN*/
+/*###############################################*/
+var con = mysql.createPool(db);
+con.getConnection(function(err){
+	  if(err){console.log('Error connecting to Db - ',err);return;} //IF ERROR
+});
+
+module.exports = con;
+
+/var con = require('../db_config_updated.js');/
