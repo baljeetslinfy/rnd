@@ -2,8 +2,8 @@ var mysql = require("mysql");
 var db  = {
   host            : 'localhost',
   user            : 'root',
-  password        : 'sunny007',
-  database        : 'mede'
+  password        : '',
+  database        : ''
 }
 /*###############################################*/
 /* MYSQL DATABASE CONNECTION USING POOL #########*/
